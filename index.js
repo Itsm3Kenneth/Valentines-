@@ -12,7 +12,6 @@ const imgs = [
   "images/trunggghiguys.gif",
 ];
 const names = ["John", "Steven", "Bob", "Yuming", "Kitty", "Doggy", "Bleh"];
-
 renderCatImage(imgs);
 if (localStorageName) {
   authorTag.textContent = `Made by ${localStorageName}`;
@@ -30,9 +29,9 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-  console.log("clicked")
-  window.open("yippe.html", "_self")
-})
+  console.log("clicked");
+  window.open("yippe.html", "_self");
+});
 
 function renderCatImage(arr) {
   const mainNum = Math.floor(Math.random() * imgs.length);
