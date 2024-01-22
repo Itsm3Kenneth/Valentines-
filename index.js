@@ -21,17 +21,23 @@ if (localStorageName) {
 }
 
 noBtn.addEventListener("mouseover", () => {
+  moveNoBtn();
+});
+noBtn.addEventListener("click", () => {
+  moveNoBtn();
+});
+
+yesBtn.addEventListener("click", () => {
+  window.open("yippe.html", "_self");
+});
+
+function moveNoBtn() {
   const xPos = Math.floor((Math.random() * 850) / 10);
   const yPos = Math.floor((Math.random() * 850) / 10);
   noBtnStyle.top = `${yPos}%`;
   noBtnStyle.left = `${xPos}%`;
   noBtnStyle.position = "absolute";
-});
-
-yesBtn.addEventListener("click", () => {
-  console.log("clicked");
-  window.open("yippe.html", "_self");
-});
+}
 
 function renderCatImage(arr) {
   const mainNum = Math.floor(Math.random() * imgs.length);
