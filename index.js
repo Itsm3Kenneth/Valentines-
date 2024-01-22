@@ -29,6 +29,11 @@ noBtn.addEventListener("mouseover", () => {
   noBtnStyle.position = "absolute";
 });
 
+yesBtn.addEventListener("click", () => {
+  console.log("clicked")
+  window.open("yippe.html", "_self")
+})
+
 function renderCatImage(arr) {
   const mainNum = Math.floor(Math.random() * imgs.length);
   const secretImage = Math.floor(Math.random() * 100);
