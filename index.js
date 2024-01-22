@@ -30,12 +30,12 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 function renderCatImage(arr) {
-  const mainNum =  Math.floor(Math.random() * imgs.length);
-  const secretImage = Math.floor(Math.random() * 100)
-  if (secretImage == 1){
-    mainImg.src = "images/cat-meme.gif"
-  }else{
-    mainImg.src = imgs[mainNum]
+  const mainNum = Math.floor(Math.random() * imgs.length);
+  const secretImage = Math.floor(Math.random() * 100);
+  if (secretImage == 1) {
+    mainImg.src = "images/cat-meme.gif";
+  } else {
+    mainImg.src = imgs[mainNum];
   }
 }
 
