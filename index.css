@@ -1,58 +1,85 @@
-body{
-    background-color: #ffc8dd;
-    font-family: monospace;
-    background-image: url("Untitled_design-removebg-preview.png");
-    user-select: none;
-    margin: 0;
+:root {
+  --pink: #ffc8dd;
+  --purple: #390099;
 }
 
-#container{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 100vw;
+body {
+  background-color: var(--pink);
+  font-family: monospace;
+  background-image: url("images/backgroundPG.png");
+  user-select: none;
+  margin: 0;
 }
 
-#main-img{
-    width: 400px;
+#container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100vw;
 }
 
-h1{
-    font-size: 3em;
-    letter-spacing: 4px;
-    color: #390099;
+#main-img {
+  width: 20%;
+  object-fit: cover;
 }
 
-button{
-    background-color: #390099;
-    border: 8px solid whitesmoke;
-    box-shadow: 0 0 5px whitesmoke;
-    border-radius: 0.7em;
-    padding: 0.5em 2em;
-    font-size: 3em;
-    margin: 1em 1em 0;
-    transition: all 0.3s;
-    font-family: inherit;
-    font-weight: bold;
-    letter-spacing: 4px;
-    color: whitesmoke;
-    cursor: pointer;
+h1 {
+  font-size: 3vw;
+  letter-spacing: 0.2rem;
+  color: var(--purple);
 }
 
-
-#yes:hover{
-    background-color: #86b6e3;
-    scale: 1.1;
+button {
+  background-color: var(--purple);
+  border: 0.5rem solid whitesmoke;
+  box-shadow: 0 0 5px whitesmoke;
+  border-radius: 0.7em;
+  padding: 0.5em 2em;
+  font-size: 2.5rem;
+  margin: 1em 1em 0;
+  transition: all 0.3s ease-out;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
-p{
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.3em;
-    opacity: 50%;
-    color: #5e1833;
+#yes:hover {
+  background-color: #86b6e3;
+  scale: 1.1;
+}
+
+#no:active {
+  animation: tilt-shaking 50ms linear;
+}
+
+p {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  opacity: 50%;
+  color: #5e1833;
+}
+
+@keyframes tilt-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  85% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
