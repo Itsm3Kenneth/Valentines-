@@ -1,5 +1,5 @@
 # Valentine website to ask out your crush 💕
 
-Send this to your crush on Valentines day but they won't be able to press no, and there is a secret cat image
+Send this to your crush on Valentines day but they won't be able to press no, and there is a secret cat image. if you would like to change the name of the text at the bottom, xhange the author text content message in yippe.js.
 
-LINK: https://itsm3kenneth.github.io/Valentines-Website/
+https://itsm3kenneth.github.io/Valentines-Website/
