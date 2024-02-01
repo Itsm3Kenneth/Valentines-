@@ -4,6 +4,7 @@ const noBtnStyle = document.getElementById("no").style;
 
 noBtn.addEventListener("mouseover", () => {
   moveNoBtn();
+  console.log("Stop trying to press no >:(")
 });
 
 noBtn.addEventListener("click", () => {
