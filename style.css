@@ -18,6 +18,26 @@ body {
   transform: translate(-50%, -50%);
   text-align: center;
   width: 100vw;
+
+  h2
+  {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 1.2vw;
+    opacity: 50%;
+    color: var(--purple);
+    transition: all 0.3s ease;
+    a{
+      text-decoration: none;
+    }
+  }
+  h2
+  a:hover{
+    color: rgb(0, 0, 0);
+  }
+
 }
 
 #main-img {
@@ -25,7 +45,7 @@ body {
   object-fit: cover;
 }
 
-h1 {
+#blah {
   font-size: 3vw;
   letter-spacing: 0.2rem;
   color: var(--purple);
@@ -33,11 +53,11 @@ h1 {
 
 button {
   background-color: var(--purple);
-  border: 0.5rem solid whitesmoke;
+  border: 0.5vw solid whitesmoke;
   box-shadow: 0 0 5px whitesmoke;
   border-radius: 0.7em;
-  padding: 0.5em 2em;
-  font-size: 2.5rem;
+  padding: 0.6em 2em;
+  font-size: 2vw;
   margin: 1em 1em 0;
   transition: all 0.3s ease-out;
   font-family: inherit;
@@ -52,12 +72,18 @@ button {
   scale: 1.1;
 }
 
-p {
+#author {
   position: absolute;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.3rem;
-  opacity: 50%;
+  font-size: 1.2vw;
+  opacity: 20%;
   color: #5e1833;
+}
+
+#yippe {
+  font-size: 7vw;
+  margin: 0.1em 0;
+  color: var(--purple);
 }

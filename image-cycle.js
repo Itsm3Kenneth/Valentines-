@@ -1,7 +1,5 @@
-const author = "Kenneth"; // put your name
 const mainImg = document.querySelector("#main-img");
 const authorTag = document.querySelector("#author");
-const body = document.body.style;
 const imgs = [
   "images/amazed-sparkle.gif",
   "images/heart-love.gif",
@@ -22,5 +20,4 @@ function renderImage(imageLoc, arr) {
   } else {
     imageLoc.src = arr[mainNum];
   }
-  authorTag.textContent = `Made by ${author}`; //change to whatever you like
 }
